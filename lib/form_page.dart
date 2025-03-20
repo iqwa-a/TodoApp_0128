@@ -93,6 +93,14 @@ import 'package:flutter/cupertino.dart';
        },
      );
    }
+   void _validateSubmit() {
+     setState(() {
+       _dateError = _selectedDate == null ? 'Please select a date' : null;
+       {
+         addData();
+       }
+     });
+   }
  
    @override
    Widget build(BuildContext context) {
