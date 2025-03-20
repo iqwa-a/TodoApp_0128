@@ -153,6 +153,28 @@ import 'package:intl/intl.dart';
                      ),
                    ),
                  ],
+               ),
+                  const SizedBox(height: 10),
+               Form(
+                 key: _key,
+                 child: Row(
+                   children: [
+                     Expanded(
+                       child: TextFormField(
+                         controller: _taskController,
+                         decoration: const InputDecoration(
+                           labelText: 'Enter Task',
+                           hintText: 'Enter Your Task',
+                           border: OutlineInputBorder(),
+                           focusedBorder: OutlineInputBorder(
+                             borderSide: 
+                             BorderSide(color: Colors.blue, width:2.0)
+                           ),
+                         ),
+                       ),
+                     ),
+                   ],
+                 )
                )
              ],
            ),
