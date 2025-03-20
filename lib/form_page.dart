@@ -158,6 +158,7 @@ import 'package:intl/intl.dart';
                Form(
                  key: _key,
                  child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                    children: [
                      Expanded(
                        child: TextFormField(
@@ -178,6 +179,11 @@ import 'package:intl/intl.dart';
                            return null;
                          },
                        ),
+                     ),
+                     const SizedBox(width:10),
+                     FilledButton(
+                       onPressed: _validateSubmit, 
+                       child: const Text('Submit'),
                      ),
                    ],
                  )
