@@ -205,6 +205,33 @@ import 'package:intl/intl.dart';
                        margin: const EdgeInsets.symmetric(vertical: 8),
                        child: Row(
                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                         children: [
+                           Column(
+                             crossAxisAlignment: CrossAxisAlignment.start,
+                             children: [
+                               Text(
+                                 listTugas[index]['task'],
+                                 style: const TextStyle(
+                                   fontSize: 16,
+                                   fontWeight: FontWeight.bold,
+                                 ),
+                               ),
+                               Text(
+                                 'Deadline: ${DateFormat('dd-MM-yyyy hh:mm a').format(listTugas[index]['deadline'])}',
+                                 style: const TextStyle(color: Colors.blueGrey),
+                               ),
+                               Text(
+                                 listTugas[index]['done'] ? 'Done' : 'Not Done',
+                                 style: TextStyle(
+                                   color: listTugas[index]['done']
+                                       ? Colors.green
+                                       : Colors.red,
+                                   fontWeight: FontWeight.bold
+                                 ),
+                               )
+                             ],
+                           )
+                         ],
                        ),
                      );
                    }
