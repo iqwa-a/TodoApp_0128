@@ -1,16 +1,7 @@
-# pertemuan2
+![image](https://github.com/user-attachments/assets/7cef74e2-c19d-4071-8bd2-9c067c690122)
 
-A new Flutter project.
+![image](https://github.com/user-attachments/assets/494b4e6a-2cbe-4583-ab19-1fe46ee7217f)
 
-## Getting Started
+![image](https://github.com/user-attachments/assets/83ce6eb1-eedf-4ee6-9d48-4cb5e3665b62)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/user-attachments/assets/07c6fe18-cb25-4601-9fa8-2fc13d364998)
