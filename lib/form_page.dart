@@ -230,7 +230,14 @@ import 'package:intl/intl.dart';
                                  ),
                                )
                              ],
-                           )
+                           ),
+                           Checkbox(
+                             value: listTugas[index]['done'], 
+                             onChanged: (bool? value){
+                               setState(() {
+                                 listTugas[index]['done'] = value;
+                             });
+                           })
                          ],
                        ),
                      );
