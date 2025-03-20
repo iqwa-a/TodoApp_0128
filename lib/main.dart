@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pertemuan2/counter_page.dart';
-import 'package:pertemuan2/todo_page.dart';
-
+import 'package:pertemuan2/form_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -13,11 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const TodoPage(),
+     
+      debugShowCheckedModeBanner: false,
+      home: const FormPage(),
     );
   }
 }
