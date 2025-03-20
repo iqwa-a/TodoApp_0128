@@ -107,7 +107,21 @@ import 'package:flutter/cupertino.dart';
    Widget build(BuildContext context) {
      return Scaffold(
        body: SafeArea(
-         child: child),
+         child: Padding(
+           padding: const EdgeInsets.all(16.0),
+           child: Column(
+             crossAxisAlignment: CrossAxisAlignment.start,
+             children: [
+               const Center(
+                 child: Text(
+                   'Form Page',
+                   style: TextStyle(fontSize: 30),
+                 ),
+               )
+             ],
+           ),
+         ),
+       ),
      );
    }
  }
