@@ -190,7 +190,26 @@ import 'package:intl/intl.dart';
                ),
               const SizedBox(height: 20),
                const Text('Task List',
-               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),) 
+               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+               ),
+               Expanded(
+                 child: ListView.builder(
+                   itemCount: listTugas.length,
+                   itemBuilder: (context, index){
+                     return Container(
+                       decoration: BoxDecoration(
+                         color: Colors.grey[200],
+                         borderRadius: BorderRadius.circular(10),
+                       ),
+                       padding: const EdgeInsets.all(16),
+                       margin: const EdgeInsets.symmetric(vertical: 8),
+                       child: Row(
+                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                       ),
+                     );
+                   }
+                 )
+               )
              ],
            ),
          ),
