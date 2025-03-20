@@ -171,6 +171,12 @@ import 'package:intl/intl.dart';
                              BorderSide(color: Colors.blue, width:2.0)
                            ),
                          ),
+                         validator: (value){
+                           if(value!.isEmpty){
+                             return 'Please fill the task';
+                           }
+                           return null;
+                         },
                        ),
                      ),
                    ],
